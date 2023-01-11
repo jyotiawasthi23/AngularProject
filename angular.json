@@ -71,6 +71,9 @@
               "browserTarget": "angular_Project:build:development"
             }
           },
+          "options": {
+            "port": 5200 
+        },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
@@ -93,12 +96,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b0bc1240-249f-49a4-b979-894998ec8c05"
   }
 }
